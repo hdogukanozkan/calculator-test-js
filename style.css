@@ -43,6 +43,7 @@ body {
     justify-content: right;
     align-items: center;
     padding: 0 25px;
+    overflow: hidden;
 }
 
 .btn {
