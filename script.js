@@ -20,7 +20,11 @@ btns.forEach(button => {
                 display.innerText = display.innerText.slice(0, -1)
                 break;
             default:
-                display.innerText += e.target.innerText;
+                if (display.innerText.length > 15) {
+                    alert('Error 15 karakter limit.')
+                } else {
+                    display.innerText += e.target.innerText;
+                }
         }
 
     })
